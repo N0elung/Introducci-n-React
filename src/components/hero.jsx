@@ -1,9 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-function hero({title}) {
+function Hero() {
+  const [count, setCount] = useState(0);
+  let [name, setName] = useState("kevin")
+  console.log(name)
+  const handleClick = () => {
+    setCount(prevCount => prevCount + 1); // Increment count by 1
+  };
+
   return (
-    <section className="text-7xl bg-blue-500 md:bg-[#7c4d7c] sm:text-3xl md:text-5xl w-screen h-screen flex justify-center items-center">{title}</section>
-  )
+    <section className="flex justify-center items-center flex-col h-screen">
+      {name == "juan" ? (
+        <p className='text-red-500'>eres juan</p>
+      ) : (
+        <p className='text-green-500'>IMPOSTOR</p>
+      )}
+
+    </section>
+  );
 }
 
-export default hero
+export default Hero;
