@@ -16,7 +16,7 @@ function Gallery2() {
       "https://www.zooplus.es/magazine/wp-content/uploads/2022/02/Gatos-de-exterior.jpeg"
     ];
     return (
-        <div className='grid gap-10 justify-center items-center p-8'>
+        <div className='grid gap-10 justify-center items-center p-8' id='gallery'>
             <div className='justify-center items-center flex'>
                 <h1 className='text-red-600 text-6xl font-mono font-semibold'>Beware! Cool cats below</h1>
             </div>

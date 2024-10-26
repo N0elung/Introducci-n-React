@@ -2,7 +2,7 @@ import React from 'react'
 
 function hero() {
   return (
-    <div className='h-screen w-screen flex justify-center items-center bg-no-repeat' 
+    <div className='h-screen w-screen flex justify-center items-center bg-no-repeat' id='home' 
       style={{ 
       backgroundImage: `url("gatoPistola.jpg")`, 
       backgroundPosition: 'center',
