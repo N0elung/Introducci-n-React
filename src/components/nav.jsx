@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 
 export default function nav() {
   const links = [
-    { name: "Home", href: "/" },
-    { name: "About", href: "/about" },
-    { name: "News", href: "/news" }
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Gallery", href: "#gallery" }
   ];
   const [isOpen, setisOpen] = useState(false);
 
@@ -14,9 +14,9 @@ export default function nav() {
   
 
   return (
-    <nav className="bg-background shadow-sm">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
       <div className="container mx-auto px-4">
-        <div className='flex justify-between items-center h-16'>
+        <div className='flex justify-between items-center h-16 '>
           <div className="text-2xl font-bold text-primary">Logo</div>
           <ul className='flex gap-6'>
             {links.map((item) => (

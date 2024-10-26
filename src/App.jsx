@@ -9,9 +9,9 @@ function Vite() {
   return (
     <div className='overflow-x-hidden'>
       <Nav />
-      <Hero/>
-      <About/>
-      <Gallery/>
+      <div id="home"><Hero /></div>
+      <div id="about"><About/></div>
+      <div id="gallery"><Gallery/></div>
       <Footer/>
     </div>
   )
